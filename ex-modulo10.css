@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
