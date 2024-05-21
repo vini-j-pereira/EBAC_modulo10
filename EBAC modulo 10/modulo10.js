@@ -33,7 +33,7 @@ $('form').validate({
         },
     },
     messages: {
-        nome: 'Por favor, insira o caralho do seu nome',
+        nome: 'Por favor, insira o seu nome',
         telefone: 'Este campo é obrigatorio.',
         email: 'Este campo é obrigatorio.'
     },
@@ -46,4 +46,16 @@ $('form').validate({
         alert(`Existem ${camposIncorretos} campos obrigatorios`)
       }
     }
+})
+
+$('.lista-veiculos button').click(function() {
+    const destino = $('#contato');
+
+    const nomeVeiculo = $(this).parent().find('h3').text(); 
+
+    $('#autoInt').val(nomeVeiculo);
+
+    $('html').animate({
+        scrollTop: destino.offset().top
+    }, 1000)
 })
